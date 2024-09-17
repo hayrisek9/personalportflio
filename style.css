@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* RESET CSS START*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    font-size: 60%;
+    overflow-x: hidden;
+}
+span{
+    color: #EEEEEE;
+}
+section{
+    max-height: 100vh;
+    padding: 10rem 12% 10rem;
+}
+body{
+   background-color: #222831;
+   color:#EEEEEE ;
+}
+/* RESET CSS END*/
+/* ?HEADER CSS START */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 4rem 12% 4rem ;
+    background-color: #0C0C0C; 
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+
+}
+.logo{
+    font-size: 3rem;
+    color: #EEEEEE;
+    font-weight: 800;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.logo span{
+    text-shadow: 0 0 23px #FF9100 ;
+    
+   
+}
+.logo:hover{
+    transform: scale(1.1);  
+}
+.logo span:hover{
+    color:#87A922;
+}
+.navbar a{
+    font-size: 1.7rem;
+    color: #EEEEEE;
+    margin-left: 4.1rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+.navbar a:hover,
+.navbar a:active{
+    color: #87A922;
+    border-bottom: 3px solid #FF9100;
+}
+#menu-icon{
+    font-size: 3.7rem;
+    color: #FF9100;
+    display: none;
+}
+/* ?HEADER CSS END */
+/* ?HOME START  */
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15rem;
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+    text-align: left;
+    margin-top: 3rem;
+
+}
+.home-content h1{
+    font-size: 7rem;
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 1.5rem;
+
+}
+.home-content h3{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 3.5rem;
+
+}
+
+.home-img{
+    border-radius: 50%;
+
+}
+.home-img img{
+    width: 29vw;
+    position: relative;
+    top: 5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 29px #87A922;
+    cursor: pointer;
+    transition: 0.5s ease-in-out ;
+}
+
+.home-img img:hover{
+    box-shadow: 0 0 29px #FF9100;
+}
+/* ?HOME END  */

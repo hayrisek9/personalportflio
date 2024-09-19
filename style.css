@@ -20,7 +20,7 @@ span{
     color: #EEEEEE;
 }
 section{
-    max-height: 100vh;
+    
     padding: 10rem 12% 10rem;
 }
 body{
@@ -87,6 +87,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 15rem;
+    background-color: #222831;
 }
 .home-content{
     display: flex;
@@ -128,4 +129,302 @@ body{
 .home-img img:hover{
     box-shadow: 0 0 29px #FF9100;
 }
+.home-content p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.7;
+    max-width: 1001px;
+}
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background-color: transparent;
+    border: 2px solid #FF9100;
+    font-size: 2.5rem;
+    border-radius: 47%;
+    cursor: pointer;
+    color: #87A922;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 300ms ease-in-out;
+}
+.social-icons a:hover{
+    color: #EEEEEE;
+    transform: scale(1.1) translateY(-5px) translateX(3px);
+    box-shadow: 0 0 23px #87A922;
+    background-color: #FF9100;
+
+}
+.btn{
+    display: inline-block;
+    padding: 1rem 2.7rem;
+    box-shadow: 0 0 23px #87A922;
+    border-radius: 4.1rem;
+    font-size: 1.7rem;
+    color: #0C0C0C;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 47px #FF9100;
+    background-color: #E1D7B7;
+}
+.btn-group{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.btn-group a:nth-of-type(2){
+    background-color: #87A922;
+    color: #E1D7B7;
+    border: 2px solid #FF9100;
+    box-shadow: 0 0 23px transparent;
+    
+}
+.btn-group a:nth-of-type(2):hover{
+    box-shadow: 0 0 23px #87A922;
+    background-color: #FF9100;
+    color: #0C0C0C;
+    border: 2px solid #222831;
+}
+.text-animation{
+    font-size: 31px;
+    font-weight: 600;
+    min-width: 279px;  
+}
+.text-animation span{
+    position: relative;
+}
+
+.text-animation span::before{
+    content: '';
+    color: #FF9100;
+    animation: words 20s infinite;
+}
+.text-animation span::after{
+    content: '';
+    background-color: #222831;
+    height: 100%;
+    width: calc(100% + 3px);
+    position: absolute;
+    right: -3px;
+    border-left: 3px solid #222831;
+    animation: cursor 0.5s infinite, typing 20s steps(14) infinite;
+}
+@keyframes cursor{
+    to{
+        border-left: 2px solid #87A922;
+    }
+}
+
+@keyframes words{
+     0%,
+     20% {
+        content: "are Front-end Developer";
+     }
+     21%,
+     40% {
+        content: "are Back-end Developer";
+     }
+     41%,
+     60% {
+        content: "are Software Tester";
+     }
+     61%,
+     80% {
+        content: "are Software Developer";
+     }
+     81%,
+     100% {
+        content: "are Full-Stack Developer";
+     }
+}
+
+@keyframes typing{
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95%{
+        width: 0;
+    }
+    
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85%,
+    100%{
+        width: calc(100% + 3px);
+    }
+}
 /* ?HOME END  */
+/* ?EDUCATION START */
+.heading{
+    font-size: 7rem;
+    text-align: center;
+    margin: 5rem 0 ;
+    margin-bottom: 1rem;
+}
+.education{
+    background-color: #3C3D37;
+    padding: 101px 17px;
+    
+
+}
+.timeline-items{
+    max-width: 1199px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.timeline-items::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: #87A922;
+    left: calc(50% - 1px);
+}
+.timeline-item{
+    margin-bottom: 41px;
+    width: 100%;
+    position: relative;
+}
+.timeline-item:last-child{
+    margin-bottom: 0;
+}
+
+.timeline-item:nth-child(odd){
+    padding-right: calc(50% + 31px);
+}
+.timeline-item:nth-child(even){
+    padding-left: calc(50% + 31px);
+}
+
+.timeline-dot{
+    height: 21px;
+    width: 21px;
+    background-color: #87A922;
+    box-shadow: 0 0 23px #87A922, 0 0 47px #87A922;
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 11px;
+}
+
+.timeline-date{
+    font-size: 19px;
+    font-weight: 800;
+    color: #EEEEEE;
+    margin: 5px 0 13px;
+}
+.timeline-content{
+    background-color: #222831;
+    border: 3px solid #FF9100;
+    padding: 31px 51px;
+    border-radius: 4.1rem;
+    box-shadow: 0 0 11px #87A922;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.timeline-content:hover{
+    box-shadow: 0 0 23px #FF9100;
+    transform: scale(1.05) translateX(-5px);
+}
+.timeline-content h3{
+    font-size: 19px;
+    color: #EEEEEE;
+    margin: 0 0 11px;
+    font-weight: 500;
+}
+.timeline-content p{
+    color: #EEEEEE;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 23px;
+}
+::-webkit-scrollbar{
+    width: 1.7rem;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #FF9100;
+    border-radius: 4.1rem;
+}
+::-webkit-scrollbar-track{
+    background-color: #0C0C0C;
+    width: 47px;
+}
+/* ?EDUCATION END */
+/* ?SERVICES START */
+.services{
+    background-color: #0C0C0C;
+    color: #E1D7B7;
+}
+.services h2{
+    color: #E1D7B7;
+    margin-bottom: 5rem;
+}
+.services-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+.services-box{
+    background-color:#222831 ;
+    height: 299px;
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.services-box:hover{
+    background-color: #3C3D37;
+    color: #87A922;
+    border: 5px solid #FF9100;
+    box-shadow: 0 0 23px #87A922;
+    transform: scale(1.03);  
+}
+.services-box .service-info{
+    display: flex;
+    max-height: 199px;
+    text-align: left;
+    padding: 5rem 5rem;
+    flex-direction: column;
+    justify-content: left;
+    align-items: baseline;
+}
+.service-info h4{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 2;
+}
+.service-info p {
+    font-size: 1.7rem;
+    font-weight: 600;
+    max-height: 99px;
+    line-height: 1.7;
+    margin: auto;
+}
+/* ?SERVICES END */
+/* ?FROM YOU START */
+
+/* ?FROM YOU END */
